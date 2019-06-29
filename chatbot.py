@@ -55,8 +55,6 @@ img = Image.open('temp.jpg')
 img.show()
 
 
-
-
 ##show pic from a file
 ##time.sleep(1)
 ##from PIL import Image                                                                                
@@ -69,4 +67,3 @@ img.show()
 ##print (f"ok i'll draw something, wait for me to finish!")
 
 
-##
