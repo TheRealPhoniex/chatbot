@@ -37,33 +37,46 @@ var6 = input ("Do you want to see my girlfriend?: ")
 time.sleep(1)
 ##print (f"is it this one?")
 
-
+if  var6 == "yes":
 
 ##show pic from internet
 
-from PIL import Image
-import urllib.request
+    from PIL import Image
+    import urllib.request
 
-URL = 'https://assets.capitalfm.com/2018/23/lilliya-scarlett-instagram-1528814125-custom-0.png'
+    URL = 'https://assets.capitalfm.com/2018/23/lilliya-scarlett-instagram-1528814125-custom-0.png'
 
-with urllib.request.urlopen(URL) as url:
-    with open('temp.jpg', 'wb') as f:
-        f.write(url.read())
+    with urllib.request.urlopen(URL) as url:
+        with open('temp.jpg', 'wb') as f:
+            f.write(url.read())
 
-img = Image.open('temp.jpg')
+    img = Image.open('temp.jpg')
 
-img.show()
+    img.show()
 
-
-##show pic from a file
-##time.sleep(1)
-##from PIL import Image                                                                                
-##img = Image.open('shiba-inu-card-small.jpg')
-##img.show() 
+else:
+    print("ok")
 
 
-##var13 = input("You want me to draw something for you?: ")
 
-##print (f"ok i'll draw something, wait for me to finish!")
+var13 = input("You want me to draw something for you?: ")
 
 
+if  var13 == "yes":
+
+     print (f"ok i'll draw something, wait for me to finish!")
+
+##draw
+     from turtle import *
+     color('red', 'yellow')
+     begin_fill()
+     while True:
+         forward(200)
+         left(170)
+         if abs(pos()) < 1:
+             break
+     end_fill()
+     done()
+
+else:
+    print("ok")
