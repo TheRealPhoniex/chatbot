@@ -61,7 +61,7 @@ time.sleep(1)
 ##summarise the users info
 print (f"Ok so your name is " + my_dict['name'] 
 + " and your age is "  + str(my_dict['age']) + " and your address is " + my_dict['address'] +
-" and your favorite movie is " + my_dict['movie'] + " and you play " + my_dict['sport'] + " thats all :P")
+" and your favorite movie is " + my_dict['movie'] + " and you play " + my_dict['sport'] + ".thats all :P")
 
 
 
@@ -154,6 +154,7 @@ healthy = ["chicken"
           , "water"]
 
 var8 = input("whats you favorite food or drink: ")
+my_dict['food'] = var8
 if var8 in healthy:        
       print(f"your gonna be healthy :)")
 else:
@@ -198,3 +199,55 @@ else:
     print(f"ok")
     
 
+
+var14 = ("do you skate board?: ")
+if var14 == ("yes"):
+   print(f"ok you'll like this game:)")
+   time.sleep(3)
+   webbrowser.open('http://www.agame.com/game/stunt-skateboard-3d')
+else:
+    print(f"ok then.")
+
+var15 = input("well i'll see you later: ")
+
+var16 = input("do you want to talk to me -ralph the creator: ")
+if var16 == ("no"):
+    exit()
+else:
+    print(f"yay x) -ralph the creator")
+
+var17 = input("So you name is " + my_dict['name'] + " right?- ralph the creator: ")
+if var17 == "yes":
+    print(f"ok")
+else:
+    print(f"of course thats your name!")
+time.sleep(2.5)
+var18 = input("and your favorite food is " + my_dict['food'] + " right?- ralph the creator: ")
+if var18 == "yes":
+    print(f"ok")
+else:
+    print(f"of course its your favorite food!")
+
+var19 = input("and your favorite sport is " + my_dict['sport'] + " right?- ralph the creator: ")
+if var19 == "yes":
+    print(f"ok")
+else:
+    print(f"of course its your favorite sport!")
+
+var20 = input("and finally , your address is " + my_dict['address'] + " right?- ralph the creator: ")
+if var20 == "yes":
+    print(f"ok")
+else:
+    print(f"of course its your favorite address!: ")
+
+var21 = input("so" + my_dict['name'] + " how is your day? - ralph the creator: ")
+if var21 in good_expressions:
+     print(f" {var21.title()} day ")
+else:
+     print("ohh :(")
+
+var22 = input("lets play some minecraft , no?: ")
+if var22 == "yes":
+    webbrowser.open('https://www.minecraft.net/fi-fi/')
+else:
+    print(f"ok , thats fine")
