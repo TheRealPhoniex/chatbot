@@ -251,3 +251,10 @@ if var22 == "yes":
     webbrowser.open('https://www.minecraft.net/fi-fi/')
 else:
     print(f"ok , thats fine")
+
+var23 = input("ok so lets play wolf simulator :)")
+if var23 == "yes":
+
+    webbrowser.open('https://www.crazygames.com/game/wolf-simulator-wild-animals-3d')
+else:
+    print(f"ok then")
